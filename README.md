@@ -9,7 +9,7 @@ activate.bat (windows)  //Для линукса -   source env/bin/activate (lin
 
 pip install -r requirements.txt
 
-set FLASK_APP=app.py (windows)  //Для линукса -  export FLASK_APP=app.py (linux)
+set FLASK_APP=app.py  //Для линукса -  export FLASK_APP=app.py (linux)
 
 flask run
 
