@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block Head %}
+    <title>Список подкастов </title>
+    <base target="_blank">
+{% endblock %}
+
+{% block Body %}
+    {% for file, prop in podcasts.items() %}
+        <div class="postWithAudio defaultPost">
+            <img src={{ prop.thumbnails.0.url }}></br>
+            Канал: <a href={{ prop.uploader_url }}><b>{{ prop.uploader }}</b></a></br>
+            Ссылка на видео: <a href={{ prop.webpage_url }}>{{ prop.title }}</a></br>
+            <audio controls preload="metadata" style="width: 90%;">
+                <source src = {{ file }} />
+            </audio>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/../static/style/bootstrap.min.css">
+	<link rel="stylesheet" href="/../static/style/myStyles.css">
+    {% block Head %}{% endblock %}
+</head>
+<body>
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        <a href="/" class="navbar-brand d-flex align-items-center" target="_self"><strong>{{username}}</strong> </a>
+        <a href="/add" class="navbar-brand d-flex align-items-center" target="_self"><strong>Добавить подкаст</strong> </a>
+		<a href="/login" class="navbar-brand d-flex align-items-center" target="_self"><strong>Войти</strong> </a>
+        <a href="/signup" class="navbar-brand d-flex align-items-center" target="_self"><strong>Зарегистрироваться</strong> </a>
+    </div>
+  </div>
+</header>
+    {% block Body %}{% endblock %}
+<div class = "footer">
+   &copy; Гиниятуллин Максим
+  </div>
+</body>

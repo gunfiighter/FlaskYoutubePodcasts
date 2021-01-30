@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block Head %}
+    <title>Добавление подкаста</title>
+{% endblock %}
+
+{% block Body %}
+    <div class="defaultPost">
+        <form method="POST" action="">
+            Вставьте ссылку на видео из youtube </br><input type="text" name="link"/>
+          <input type="submit" name="Submit" value="Загрузить видео"/>
+        </form>
+
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
+    </div>
+{% endblock %}

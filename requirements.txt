@@ -1,0 +1,4 @@
+flask
+youtube-dl
+flask_login
+flask_sqlalchemy
